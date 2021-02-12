@@ -3,19 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hogwarts</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <title>Cleaning Hogwarts</title>
   </head>
   <body>
-    <section id="listsection">
-      <div class="studentcontainer"></div>
-    </section>
+    <h1>Cleaning Hogwarts</h1>
 
-    <template id="template_student">
-      <p class="name"></p>
-      <img src="" alt="" />
-      <p class="gender"></p>
-      <p class="house"></p>
+    <table id="list">
+      <thead>
+        <tr>
+          <th>firstname</th>
+          <th>nickname</th>
+          <th>middlename</th>
+          <th>lastname</th>
+          <th>house</th>
+          <th>gender</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- student template will be copied and inserted here -->
+      </tbody>
+    </table>
+
+    <template id="student">
+      <tr>
+        <td data-field="firstname">NAME</td>
+        <img src="" alt="" />
+        <td data-field="nickname">NAME</td>
+        <td data-field="middlename">NAME</td>
+        <td data-field="lastname">NAME</td>
+        <td data-field="house">HOUSE</td>
+        <td data-field="gender">GENDER</td>
+      </tr>
     </template>
 
     <script src="script.js"></script>
